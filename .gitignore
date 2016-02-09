@@ -1,0 +1,35 @@
+# Binaries
+/Debug
+/.settings
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Visual Studio files
+*.sln
+*.sdf
+*.vcxproj
+*.filters
+*.opensdf
+
+# LabVIEW files
+*.aliases
+*.lvlps
+
+# Eclipse files
+.cproject
+.project
+build.properties
+build.xml
+sysProps.xml
