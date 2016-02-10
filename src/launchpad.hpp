@@ -4,6 +4,8 @@
 #include <WPILib.h>
 
 class Launchpad {
+public:
+	Launchpad();
 private:
 	// The Launchpad
 	Joystick * launchpad;
