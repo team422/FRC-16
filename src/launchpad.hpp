@@ -4,6 +4,9 @@
 #include <WPILib.h>
 
 class Launchpad {
+private:
+	// The Launchpad
+	Joystick * launchpad;
 public:
 	// Button variables may be renamed
 	// Lone switch
