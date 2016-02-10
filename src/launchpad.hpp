@@ -5,7 +5,7 @@
 
 class Launchpad {
 public:
-	Launchpad();
+	Launchpad(uint32_t port);
 private:
 	// The Launchpad
 	Joystick * launchpad;
