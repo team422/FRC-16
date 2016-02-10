@@ -20,14 +20,7 @@ void UI::initialize() {
 
 	Secondary_Driver::launchpad = new Joystick(0);
 	Secondary_Driver::controller = new Xbox_Controller(3);
-	Secondary_Driver::intake_1 = new JoystickButton(Primary_Driver::left_stick,
-													Ports::Launchpad::INTAKE_FORWARD);
-	Secondary_Driver::intake_2 = new JoystickButton(Primary_Driver::left_stick,
-	                                                Ports::Launchpad::INTAKE_BACKWARD);
-	Secondary_Driver::intake_3 = new JoystickButton(Primary_Driver::left_stick,
-	                                                Ports::Launchpad::INTAKE_STOP);
 
-	Secondary_Driver::intake_1->WhenPressed( new Set_Intake_Speed(intake_speed) );
-	Secondary_Driver::intake_2->WhenPressed( new Set_Intake_Speed(-intake_speed) );
-	Secondary_Driver::intake_3->WhenPressed( new Set_Intake_Speed(0) );
+	Secondary_Driver::controller::A->WhilePressed( new Set_Intake_Speed(intake_speed) );
+	Secondary_Driver::controller::B->WhilePresses( new Set_Intake_Speed(-intake_speed) );
 }
