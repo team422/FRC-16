@@ -13,5 +13,5 @@ void Set_Intake_Speed::Initialize() {
 }
 
 bool Set_Intake_Speed::IsFinished() {
-	return true;
+	return false;
 }
