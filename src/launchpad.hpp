@@ -28,7 +28,7 @@ public:
 	// 1, 2, and 3 are in the top row
 	// 4, 5, and 6 are in the middle row
 	// 7, 8, and 9 are in the bottom row
-	Button * const BUTTON_1;
+	//Button * const BUTTON_1;
 	Button * const BUTTON_2;
 	Button * const BUTTON_3;
 	Button * const BUTTON_4;
