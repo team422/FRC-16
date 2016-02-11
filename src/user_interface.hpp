@@ -16,6 +16,8 @@ namespace UI {
 		extern JoystickButton *intake_1,
 		                      *intake_2,
 							  *intake_3;
+		//Not sure if necessary.
+		extern Launchpad *launchpad;
 	}
 	void initialize();
 }
