@@ -4,7 +4,10 @@
 #include <WPILib.h>
 
 class Launchpad {
-  //Probably don't methods like the ones in Xbox for GetX/GetY because there are no joysticks
+  //Separated publics for initialization. May not be necessary
+  public:
+    Launchpad(uint_32 port);
+  //Probably don't need methods like the ones in Xbox for GetX/GetY because there are no joysticks
   public:
     //Buttons that are commented out are not plugged in, but are included so a logical order can be followed
     Button * const BIG_BUTTON_1;
