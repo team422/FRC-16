@@ -3,6 +3,7 @@
 
 #include "port_mapping.hpp"
 #include "xbox_controller.hpp"
+#include "launchpad.hpp"
 #include <WPILib.h>
 
 namespace UI {
@@ -11,7 +12,7 @@ namespace UI {
 		                *right_stick;
 	}
 	namespace Secondary_Driver {
-		extern Joystick *launchpad;
+		extern Launchpad *launchpad;
 		extern Xbox_Controller *controller;
 	}
 	void initialize();
