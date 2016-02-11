@@ -13,18 +13,18 @@ public:
 	// Some of the buttons are not connected to the launchpad,
 	// so they have been commented out
 	
-	// Button variables may be renamed
+	// Button variables may be renamed with more appropriate names
 	
 	// Lone switch
 	//Button * const SWITCH;
 	
-	// Switches in 1x4 configuration
+	// Row of 4 switches
 	//Button * const SWITCH_1;
 	Button * const SWITCH_2;
 	Button * const SWITCH_3;
 	Button * const SWITCH_4;
 	
-	// Buttons in 3x3 configuration
+	// Buttons in 3x3
 	//Button * const BUTTON;
 	Button * const BUTTON_1;
 	Button * const BUTTON_2;
@@ -35,7 +35,7 @@ public:
 	Button * const BUTTON_7;
 	Button * const BUTTON_8;
 	
-	// Buttons in 1x3 configuration
+	// Column of 3 buttons
 	//Button * const BUTTON_9;
 	//Button * const BUTTON_10;
 	//Button * const BUTTON_11;
