@@ -18,6 +18,6 @@ void UI::initialize() {
 	Secondary_Driver::launchpad = new Launchpad(0);
 	Secondary_Driver::controller = new Xbox_Controller(3);
 	
-	Secondary_Driver::controller::A->WhileHeld(new Set_Intake_Speed(intake_speed));
-	Secondary_Driver::controller::B->WhileHeld(new Set_Intake_Speed(-intake_speed));
+	Secondary_Driver::controller->A->WhileHeld(new Set_Intake_Speed(intake_speed));
+	Secondary_Driver::controller->B->WhileHeld(new Set_Intake_Speed(-intake_speed));
 }
