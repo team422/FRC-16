@@ -23,3 +23,11 @@ void Intake::set_arm_normalized(float speed) {
 void Intake::InitDefaultCommand() {
 	SetDefaultCommand( new Toggle_Intake_Pos() );
 }
+
+bool Intake::get_is_moving() {
+	return is_moving;
+}
+
+void Intake::set_is_moving(bool value) {
+	is_moving = value;
+}
