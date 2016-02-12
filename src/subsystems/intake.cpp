@@ -24,6 +24,10 @@ void Intake::InitDefaultCommand() {
 	SetDefaultCommand( new Toggle_Intake_Pos() );
 }
 
-bool Intake::is_moving() {
+bool Intake::get_is_moving() {
 	return Intake::is_moving;
+}
+
+void Intake::set_is_moving(bool is_moving) {
+	Intake::is_moving = is_moving;
 }
