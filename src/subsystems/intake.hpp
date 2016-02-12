@@ -9,6 +9,7 @@ public:
 	void InitDefaultCommand();
 	void set_roller_normalized(float speed);
 	void set_arm_normalized(float speed);
+	bool is_moving;
 
 private:
 	CANTalon *roller,
