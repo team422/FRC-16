@@ -3,6 +3,7 @@
 
 #include "port_mapping.hpp"
 #include "xbox_controller.hpp"
+#include "launcher.hpp"
 #include <WPILib.h>
 
 namespace UI {
