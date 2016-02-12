@@ -32,6 +32,6 @@ class Launchpad {
     //Button * BOTTOM_COLUMN_BUTTON;
 
   private:
-    Launchpad * launchpad
+    Joystick * launchpad
 }
 #endif //LAUNCHPAD_CLASS_HPP
