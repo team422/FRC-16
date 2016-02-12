@@ -10,7 +10,7 @@ public:
 	void set_roller_normalized(float speed);
 	void set_arm_normalized(float speed);
 	bool get_is_moving();
-	void set_is_moving();
+	void set_is_moving(bool value);
 private:
 	CANTalon *roller,
 	        *arm_1,
