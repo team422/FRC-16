@@ -9,11 +9,13 @@ public:
 	void InitDefaultCommand();
 	void set_roller_normalized(float speed);
 	void set_arm_normalized(float speed);
-	bool is_moving;
+	bool get_is_moving();
+	void set_is_moving();
 private:
 	CANTalon *roller,
 	        *arm_1,
 		*arm_2;
+	bool is_moving;
 };
 
 #endif // INTAKE_HPP
