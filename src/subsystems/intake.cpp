@@ -7,7 +7,8 @@ Intake::Intake() :
 Subsystem("Intake"),
 roller( new CANTalon(Ports::CANBusIDs::INTAKE_ROLLER) ),
 arm_1( new CANTalon(Ports::CANBusIDs::INTAKE_ARM_1) ),
-arm_2( new CANTalon(Ports::CANBusIDs::INTAKE_ARM_2) ) {
+arm_2( new CANTalon(Ports::CANBusIDs::INTAKE_ARM_2) ),
+is_moving (false) {
 }
 
 void Intake::set_roller_normalized(float speed) {
@@ -21,4 +22,12 @@ void Intake::set_arm_normalized(float speed) {
 
 void Intake::InitDefaultCommand() {
 	SetDefaultCommand( new Toggle_Intake_Pos() );
+}
+
+bool Intake::get_is_moving() {
+	return is_moving;
+}
+
+void Intake::set_is_moving(bool value) {
+	is_moving = value;
 }
