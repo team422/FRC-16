@@ -7,14 +7,13 @@ class Set_Intake_Speed : public Command {
 public:
 	Set_Intake_Speed(float speed);
 	void Initialize();
-	void Execute() {};
+	void Execute();
 	bool IsFinished();
 	void End() {};
-	void Interrupted() {};
-
+	void Interrupted();
 private:
 	float speed;
-
+	bool should_stop;
 };
 
 #endif // SET_INTAKE_SPEED_HPP
