@@ -8,7 +8,7 @@ speed(speed) {
 	Requires(Subsystems::intake);
 }
 
-void Set_Intake_Speed::Initialize() {
+void Set_Intake_Speed::Execute() {
 	Subsystems::intake->set_roller_normalized(speed);
 }
 
