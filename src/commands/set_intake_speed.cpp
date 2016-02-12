@@ -28,6 +28,6 @@ bool Set_Intake_Speed::IsFinished() {
 	return false;
 }
 
-void Set_Intake_Speed:Interrupted() {
+void Set_Intake_Speed::Interrupted() {
 	Subsystems::intake->move_direction = 0; //Reset move direction to unmoving
 }
