@@ -6,7 +6,7 @@ public:
     Launchpad(uint32_t port);
 
 private:
-    Joystick *launchpad_controller;
+    Joystick *controller;
     
 public:
     /*Listing for all buttons and switches on the launchpad, 
@@ -22,8 +22,8 @@ public:
     Button * const RED_BUTTON;
     
     //Two large green buttons
-    Button * const LEFT_BIG_GREEN_BUTTON;
-    Button * const RIGHT_BIG_GREEN_BUTTON;
+    Button * const LEFT_LARGE_GREEN_BUTTON;
+    Button * const RIGHT_LARGE_GREEN_BUTTON;
     
     //Buttons in vertical 1x3 configuration
     //Button * const UPPER_BUTTON; 
