@@ -8,7 +8,7 @@ Subsystem("Intake"),
 roller( new CANTalon(Ports::CANBusIDs::INTAKE_ROLLER) ),
 arm_1( new CANTalon(Ports::CANBusIDs::INTAKE_ARM_1) ),
 arm_2( new CANTalon(Ports::CANBusIDs::INTAKE_ARM_2) ),
-is_moving(0) {
+move_direction(0) {
 }
 
 void Intake::set_roller_normalized(float speed) {
