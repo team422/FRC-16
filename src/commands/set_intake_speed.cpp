@@ -29,4 +29,5 @@ bool Set_Intake_Speed::IsFinished() {
 
 void Set_Intake_Speed::Interrupted() {
 	Subsystems::intake->set_is_moving(false);
+	Subsystems::intake->set_roller_normalized(0);
 }
