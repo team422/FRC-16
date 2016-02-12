@@ -10,10 +10,10 @@ should_stop (false) {
 }
 
 void Set_Intake_Speed::Initialize() {
-	if (Subsystems::intake::is_moving) {
+	if (Subsystems::intake->get_is_moving()) {
 		should_stop = true;
 	} else {
-		Subsystems::intake::is_moving = true;
+		Subsystems::intake->set_is_moving(true);
 	}
 }
 
@@ -29,5 +29,5 @@ bool Set_Intake_Speed::IsFinished() {
 
 void Set_Intake_Speed::Interrupted() {
 	Subsystems::intake->set_roller_normalized(0);
-	Subsystems::intake::is_moving = false;
+	Subsystems::intake->set_is_moving(false);
 }
