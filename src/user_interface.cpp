@@ -6,7 +6,7 @@
 Joystick *UI::Primary_Driver::left_stick = 0,
          *UI::Primary_Driver::right_stick = 0;
 
-Joystick *UI::Secondary_Driver::launchpad = 0;
+Launchpad *UI::Secondary_Driver::launchpad = 0;
 Xbox_Controller *UI::Secondary_Driver::controller = 0;
 JoystickButton *UI::Secondary_Driver::intake_1 = 0,
                *UI::Secondary_Driver::intake_2 = 0,
@@ -18,7 +18,7 @@ void UI::initialize() {
 	Primary_Driver::left_stick = new Joystick(1);
 	Primary_Driver::right_stick = new Joystick(2);
 
-	Secondary_Driver::launchpad = new Joystick(0);
+	Secondary_Driver::launchpad = new Launchpad(0);
 	Secondary_Driver::controller = new Xbox_Controller(3);
 	Secondary_Driver::intake_1 = new JoystickButton(Primary_Driver::left_stick,
 													Ports::Launchpad::INTAKE_FORWARD);
