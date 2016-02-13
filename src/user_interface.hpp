@@ -14,9 +14,6 @@ namespace UI {
 	namespace Secondary_Driver {
 		extern Launchpad *launchpad;
 		extern Xbox_Controller *controller;
-		extern JoystickButton *intake_1,
-		                      *intake_2,
-							  *intake_3;
 	}
 	void initialize();
 }
