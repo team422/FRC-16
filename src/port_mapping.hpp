@@ -22,10 +22,5 @@ namespace Ports {
 					   INTAKE_ARM_1 = 43,
 					   INTAKE_ARM_2 = 38;
 	}
-	namespace Launchpad {
-		const uint32_t INTAKE_FORWARD = 3,
-		               INTAKE_BACKWARD = 1,
-					   INTAKE_STOP = 2;
-	}
 }
 #endif
