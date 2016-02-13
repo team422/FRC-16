@@ -5,6 +5,7 @@ Launchpad::Launchpad(uint32_t port) :
 //Joystick controller for launchpad
 controller( new Joystick(port) ),
 
+//test
 //Switches in 1x4 horizontal orientation
 //LEFT_MOST_SWITCH( new JoystickButton(controller, unknown) ),
 LEFT_MIDDLE_SWITCH( new JoystickButton(controller, 6) ),
