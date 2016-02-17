@@ -10,7 +10,7 @@ public:
 	void Execute() {};
 	bool IsFinished();
 	void End() {};
-	void Interrupted() {};
+	void Interrupted();
 
 private:
 	float speed;
