@@ -15,3 +15,7 @@ void Set_Intake_Speed::Initialize() {
 bool Set_Intake_Speed::IsFinished() {
 	return false;
 }
+
+void Set_Intake_Speed::Interrupted() {
+	Set_Intake_Speed(0);
+}
