@@ -4,8 +4,9 @@
 
 class Robot : public IterativeRobot {
 private:
-		void RobotInit();
-		void TeleopInit() {};
-		void TeleopPeriodic();
+	CameraServer *camera;
 
+	void RobotInit();
+	void TeleopInit() {};
+	void TeleopPeriodic();
 };
