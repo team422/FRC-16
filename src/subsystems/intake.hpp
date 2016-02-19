@@ -1,5 +1,4 @@
-#ifndef INTAKE_HPP
-#define INTAKE_HPP
+#pragma once
 
 #include <WPILib.h>
 
@@ -15,5 +14,3 @@ private:
 	         *arm_1,
 			 *arm_2;
 };
-
-#endif // INTAKE_HPP

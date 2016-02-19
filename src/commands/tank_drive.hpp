@@ -1,5 +1,4 @@
-#ifndef TANK_DRIVE_HPP
-#define TANK_DRIVE_HPP
+#pragma once
 
 #include <WPILib.h>
 
@@ -12,5 +11,3 @@ public:
 	void End() {};
 	void Interrupted() {};
 };
-
-#endif //TANK_DRIVE_HPP

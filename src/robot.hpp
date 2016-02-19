@@ -1,5 +1,4 @@
-#ifndef ROBOT_HPP
-#define ROBOT_HPP
+#pragma once
 
 #include <WPILib.h>
 
@@ -10,5 +9,3 @@ private:
 		void TeleopPeriodic();
 
 };
-
-#endif //ROBOT_HPP

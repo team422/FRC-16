@@ -1,5 +1,4 @@
-#ifndef SET_INTAKE_POS_HPP
-#define SET_INTAKE_POS_HPP
+#pragma once
 
 #include <WPILib.h>
 
@@ -12,5 +11,3 @@ public:
 	void End() {};
 	void Interrupted() {};
 };
-
-#endif //SET_INTAKE_POS_HPP

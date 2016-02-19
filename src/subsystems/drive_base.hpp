@@ -1,5 +1,4 @@
-#ifndef DRIVE_BASE_HPP
-#define DRIVE_BASE_HPP
+#pragma once
 
 #include <WPILib.h>
 
@@ -16,5 +15,3 @@ private:
 			 *right_motor_2,
 			 *right_motor_3;
 };
-
-#endif //TANK_DRIVE.HPP

@@ -1,5 +1,4 @@
-#ifndef USER_INTERFACE_HPP
-#define USER_INTERFACE_HPP
+#pragma once
 
 #include "port_mapping.hpp"
 #include "xbox_controller.hpp"
@@ -19,5 +18,3 @@ namespace UI {
 	}
 	void initialize();
 }
-
-#endif // USER_INTERFACE_HPP

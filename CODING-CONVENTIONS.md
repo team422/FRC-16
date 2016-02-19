@@ -11,14 +11,9 @@ This document is modeled after the [Google Code C++ style guide]
 ## Header Files
 
 ### Guards
-Every header file **must** be wrapped in a `#define` guard. These guards ought
-to be named after the file they represent, e.g. a file named
-"articulated_arm.hpp" should have a `#define` guard like this:
-
-    #ifndef ARTICULATED_ARM_HPP
-	#define ARTICULATED_ARM_HPP
-	//Body of function
-	#endif //ARTICULATED_ARM_HPP
+Every header file **must** be wrapped in a `#define` guard. This is best
+accomplished with the use of `#pragma once` at the beginning of the file, 
+as the standard compliler supports it.
 
 Trailing comments, like the one in the example above, are recommended.
 

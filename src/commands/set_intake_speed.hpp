@@ -1,5 +1,4 @@
-#ifndef SET_INTAKE_SPEED_HPP
-#define SET_INTAKE_SPEED_HPP
+#pragma once
 
 #include <WPILib.h>
 
@@ -16,5 +15,3 @@ private:
 	float speed;
 
 };
-
-#endif // SET_INTAKE_SPEED_HPP

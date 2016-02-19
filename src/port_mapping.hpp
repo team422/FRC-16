@@ -1,5 +1,4 @@
-#ifndef PORT_MAPPING_HPP
-#define PORT_MAPPING_HPP
+#pragma once
 
 #include <WPILib.h>
 
@@ -28,4 +27,3 @@ namespace Ports {
 					   INTAKE_STOP = 2;
 	}
 }
-#endif

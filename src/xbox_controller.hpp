@@ -1,5 +1,4 @@
-#ifndef XBOX_CONTROLLER_HPP
-#define XBOX_CONTROLLER_HPP
+#pragma once
 
 #include <WPILib.h>
 
@@ -36,5 +35,3 @@ public:
 private:
 	float deadzone_value(float value, float deadzone);
 };
-
-#endif // XBOX_CONTROLLER_HPP
