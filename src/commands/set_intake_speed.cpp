@@ -12,14 +12,14 @@ void Set_Intake_Speed::Initialize() {
 	Subsystems::intake->set_roller_normalized(speed);
 }
 
+void Set_Intake_Speed::Execute() {
+	Subsystems::intake->set_roller_normalized(speed);
+}
+
 bool Set_Intake_Speed::IsFinished() {
 	return false;
 }
 
 void Set_Intake_Speed::Interrupted() {
-	Set_Intake_Speed(0);
-}
-
-void Set_Intake_Speed::Execute() {
 	Subsystems::intake->set_roller_normalized(speed);
 }
