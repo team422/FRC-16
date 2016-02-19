@@ -1,7 +1,6 @@
 #include "tank_drive.hpp"
 #include "../user_interface.hpp"
 #include "../subsystems/subsystems.hpp"
-
 #include <WPILib.h>
 
 float scale_input(float input) {
