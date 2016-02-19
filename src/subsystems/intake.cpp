@@ -1,4 +1,4 @@
-#include <commands/toggle_intake_pos.hpp>
+#include <commands/set_intake_pos.hpp>
 #include "intake.hpp"
 #include "../port_mapping.hpp"
 #include <WPILib.h>
@@ -20,5 +20,5 @@ void Intake::set_arm_normalized(float speed) {
 }
 
 void Intake::InitDefaultCommand() {
-	SetDefaultCommand( new Toggle_Intake_Pos() );
+	SetDefaultCommand( new Set_Intake_Pos() );
 }
