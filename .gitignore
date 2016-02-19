@@ -1,6 +1,5 @@
 # Binaries
 /Debug
-/.settings
 
 # Compiled Object files
 *.slo
@@ -26,10 +25,3 @@
 # LabVIEW files
 *.aliases
 *.lvlps
-
-# Eclipse files
-.cproject
-.project
-build.properties
-build.xml
-sysProps.xml
