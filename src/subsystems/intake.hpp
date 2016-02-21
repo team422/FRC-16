@@ -8,7 +8,7 @@ public:
 	void InitDefaultCommand();
 	void set_roller_normalized(float speed);
 	void set_arm_normalized(float speed);
-	void toggle_punch();
+	void set_punch(DoubleSolenoid::Value value);
 
 private:
 	CANTalon *roller,

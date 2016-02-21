@@ -1,10 +1,10 @@
-#include <commands/set_intake_pos.hpp>
+#include "../commands/set_intake_pos.hpp"
 #include "intake.hpp"
 #include "../port_mapping.hpp"
 #include <WPILib.h>
 
 // Uncomment for PID, leave commented for standard control
-//#define PID
+#define PID
 
 Intake::Intake() :
 Subsystem("Intake"),
@@ -40,12 +40,8 @@ void Intake::set_arm_normalized(float speed) {
 #endif
 }
 
-void Intake::toggle_punch() {
-	if (punch->Get() == DoubleSolenoid::kReverse) {
-		punch->Set(DoubleSolenoid::kForward);
-	} else {
-		punch->Set(DoubleSolenoid::kReverse);
-	}
+void Intake::set_punch(DoubleSolenoid::Value value) {
+	punch->Set(value);
 }
 
 void Intake::InitDefaultCommand() {

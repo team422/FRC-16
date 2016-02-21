@@ -2,12 +2,15 @@
 
 #include <WPILib.h>
 
-class Toggle_Intake_Punch : public Command {
+class Set_Intake_Punch : public Command {
 public:
-	Toggle_Intake_Punch();
+	Set_Intake_Punch(DoubleSolenoid::Value position);
 	void Initialize();
 	void Execute() {};
 	bool IsFinished();
 	void End() {};
 	void Interrupted() {};
+
+private:
+	DoubleSolenoid::Value position;
 };
