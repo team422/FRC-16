@@ -14,7 +14,8 @@ namespace UI {
 		extern Xbox_Controller *controller;
 		extern JoystickButton *intake_1,
 		                      *intake_2,
-							  *intake_3;
+							  *intake_3,
+							  *intake_double;
 	}
 	void initialize();
 }
