@@ -16,4 +16,6 @@ private:
 			 *arm_2;
 
 	DoubleSolenoid *punch;
+
+	void SetupTalonForPID(CANTalon *talon);
 };

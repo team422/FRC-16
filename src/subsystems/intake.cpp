@@ -17,13 +17,7 @@ punch( new DoubleSolenoid(Ports::Solenoids::INTAKE_PUNCH_OUT,
 	arm_1->SetControlMode(CANSpeedController::kFollower);
 	arm_1->Set(Ports::CANBusIDs::INTAKE_ARM_2);
 	arm_2->SetClosedLoopOutputDirection(true);
-	arm_2->SetControlMode(CANSpeedController::kPosition);
-	arm_2->SetPID(0.1, 0, 0);
-	//arm_2->ConfigLimitMode(CANSpeedController::kLimitMode_SoftPositionLimits);
-	//arm_2->ConfigForwardLimit(20000);
-	//arm_2->ConfigReverseLimit(0);
-	// Assuming that the arm is always down when starting
-	arm_2->SetPosition(0);
+	SetupTalonForPID(arm_2);
 #endif
 
 	punch->Set(DoubleSolenoid::kReverse);
@@ -46,4 +40,15 @@ void Intake::set_punch(DoubleSolenoid::Value value) {
 
 void Intake::InitDefaultCommand() {
 	SetDefaultCommand( new Set_Intake_Pos() );
+}
+
+void Intake::SetupTalonForPID(CANTalon *talon) {
+	talon->SetClosedLoopOutputDirection(true);
+	talon->SetControlMode(CANSpeedController::kPosition);
+	talon->SetPID(0.1, 0, 0);
+	//talon->ConfigLimitMode(CANSpeedController::kLimitMode_SoftPositionLimits);
+	//talon->ConfigForwardLimit(20000);
+	//talon->ConfigReverseLimit(0);
+	// Assuming that the arm is always down when starting
+	talon->SetPosition(0);
 }
