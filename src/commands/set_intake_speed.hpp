@@ -13,5 +13,4 @@ public:
 
 private:
 	float speed;
-
 };

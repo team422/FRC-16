@@ -6,10 +6,9 @@
 void Robot::RobotInit() {
 	Subsystems::initialize();
 	UI::initialize();
-	camera = new CameraServer::GetInstance();
-	camera->SetQuality(50);
-	camera->StartAutomaticCapture("cam0");
 	//autonomous = new Autonomous
+	CameraServer::GetInstance()->SetQuality(50);
+	CameraServer::GetInstance()->StartAutomaticCapture("cam0");
 }
 /*
 void Robot::AutonomousInit() {
