@@ -7,5 +7,5 @@ private:
 		void RobotInit();
 		void TeleopInit() {};
 		void TeleopPeriodic();
-
+		CameraServer *camera_server;
 };
