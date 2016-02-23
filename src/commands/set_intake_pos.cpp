@@ -9,7 +9,7 @@ Set_Intake_Pos::Set_Intake_Pos() {
 
 void Set_Intake_Pos::Execute() {
 	float multiplier = 0.5;
-	if (UI::Secondary_Driver::intake_double->Get()) {
+	if (UI::Secondary_Driver::launchpad->INTAKE_DOUBLE->Get()) {
 		multiplier = 1.0;
 	}
 	float stick = UI::Secondary_Driver::controller->get_left_y();
