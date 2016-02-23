@@ -13,7 +13,8 @@ void Set_Intake_Pos::Execute() {
 		multiplier = 1.0;
 	}
 	float stick = UI::Secondary_Driver::controller->get_left_y();
-	Subsystems::intake->set_arm_normalized(stick * fabs(stick) * multiplier);
+	//Subsystems::intake->set_arm_normalized(stick * fabs(stick) * multiplier);
+	Subsystems::intake->set_arm_normalized(fabs(stick) * 250);
 }
 
 bool Set_Intake_Pos::IsFinished() {

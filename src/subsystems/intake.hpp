@@ -8,14 +8,13 @@ public:
 	void InitDefaultCommand();
 	void set_roller_normalized(float speed);
 	void set_arm_normalized(float speed);
-	void set_punch(DoubleSolenoid::Value value);
+	void zero_pid();
+	float get_pid_pos();
 
 private:
 	CANTalon *roller,
 	         *arm_1,
 			 *arm_2;
-
-	DoubleSolenoid *punch;
 
 	void SetupTalonForPID(CANTalon *talon);
 };

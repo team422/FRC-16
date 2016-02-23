@@ -12,10 +12,8 @@ namespace UI {
 	namespace Secondary_Driver {
 		extern Joystick *launchpad;
 		extern Xbox_Controller *controller;
-		extern JoystickButton *intake_1,
-		                      *intake_2,
-							  *intake_3,
-							  *intake_double;
+		extern JoystickButton *intake_double,
+							  *intake_zero_pid;
 	}
 	void initialize();
 }

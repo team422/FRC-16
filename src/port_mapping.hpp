@@ -38,7 +38,8 @@ namespace Ports {
 	namespace Launchpad {
 		const uint32_t INTAKE_FORWARD = 3,
 		               INTAKE_BACKWARD = 1,
-					   INTAKE_STOP = 2;
+					   INTAKE_STOP = 2,
+					   INTAKE_ZERO_PID = 2;
 	}
 
 	// Ports for controlling pneumatics

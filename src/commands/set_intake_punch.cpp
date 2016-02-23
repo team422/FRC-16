@@ -4,11 +4,11 @@
 
 Set_Intake_Punch::Set_Intake_Punch(DoubleSolenoid::Value position) :
 position( position ) {
-	Requires(Subsystems::intake);
+	Requires(Subsystems::punch);
 }
 
 void Set_Intake_Punch::Initialize() {
-	Subsystems::intake->set_punch(position);
+	Subsystems::punch->set_punch(position);
 }
 
 bool Set_Intake_Punch::IsFinished() {
