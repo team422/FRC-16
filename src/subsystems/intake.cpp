@@ -8,7 +8,6 @@
 
 Intake::Intake() :
 Subsystem("Intake"),
-roller( new CANTalon(Ports::CANBusIDs::INTAKE_ROLLER) ),
 arm_1( new CANTalon(Ports::CANBusIDs::INTAKE_ARM_1) ),
 arm_2( new CANTalon(Ports::CANBusIDs::INTAKE_ARM_2) ) {
 #ifdef PID
@@ -17,10 +16,6 @@ arm_2( new CANTalon(Ports::CANBusIDs::INTAKE_ARM_2) ) {
 	//arm_2->SetClosedLoopOutputDirection(true);
 	SetupTalonForPID(arm_2);
 #endif
-}
-
-void Intake::set_roller_normalized(float speed) {
-	roller->Set(speed);
 }
 
 void Intake::set_arm_normalized(float speed) {

@@ -4,15 +4,14 @@
 
 Set_Intake_Speed::Set_Intake_Speed(float speed) :
 speed(speed) {
-	Requires(Subsystems::intake);
+	Requires(Subsystems::roller);
 }
 
 void Set_Intake_Speed::Initialize() {
-	Subsystems::intake->set_roller_normalized(speed);
-}
+	Subsystems::roller->set_roller_normalized(speed);}
 
 void Set_Intake_Speed::Execute() {
-	Subsystems::intake->set_roller_normalized(speed);
+	Subsystems::roller->set_roller_normalized(speed);
 }
 
 bool Set_Intake_Speed::IsFinished() {
@@ -20,5 +19,5 @@ bool Set_Intake_Speed::IsFinished() {
 }
 
 void Set_Intake_Speed::Interrupted() {
-	Subsystems::intake->set_roller_normalized(0);
+	Subsystems::roller->set_roller_normalized(0);
 }
