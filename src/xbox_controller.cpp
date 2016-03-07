@@ -16,24 +16,27 @@ RIGHT_JOYSTICK_PRESS( new JoystickButton(controller, 10) ) {
 }
 
 float Xbox_Controller::get_left_x() {
-	return deadzone_value( controller->GetRawAxis(0), 0.3 );
+	return deadzone_value(controller->GetRawAxis(0), 0.3);
 }
 
 float Xbox_Controller::get_left_y() {
-	return deadzone_value( controller->GetRawAxis(1), 0.3 );
+	return deadzone_value(controller->GetRawAxis(1), 0.3);
 }
 
 float Xbox_Controller::get_right_x() {
-	return deadzone_value( controller->GetRawAxis(4), 0.3 );
+	return deadzone_value(controller->GetRawAxis(4), 0.3);
 }
 
 float Xbox_Controller::get_right_y() {
-	return deadzone_value( controller->GetRawAxis(5), 0.3 );
+	return deadzone_value(controller->GetRawAxis(5), 0.3);
 }
 
-// The triggers are the positive and negative sides of axis 3
-float Xbox_Controller::get_triggers() {
-	return controller->GetRawAxis(3);
+float Xbox_Controller::get_left_trigger() {
+	return deadzone_value(controller->GetRawAxis(2), 0.3);
+}
+
+float Xbox_Controller::get_right_trigger() {
+	return deadzone_value(controller->GetRawAxis(3), 0.3);
 }
 
 // Add a deadzone to a value between -1.0 and 1.0, so that we can account for
