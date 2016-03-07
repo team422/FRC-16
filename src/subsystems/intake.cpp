@@ -3,9 +3,6 @@
 #include "../port_mapping.hpp"
 #include <WPILib.h>
 
-// Uncomment for PID, leave commented for standard control
-#define PID
-
 Intake::Intake() :
 Subsystem("Intake"),
 arm_1( new CANTalon(Ports::CANBusIDs::INTAKE_ARM_1) ),
@@ -39,7 +36,7 @@ float Intake::get_pid_pos() {
 
 void Intake::SetupTalonForPID(CANTalon *talon) {
 	talon->SetControlMode(CANSpeedController::kPosition);
-	talon->SetPID(0.2, 0, 0);
+	talon->SetPID(0.2, 0, 0, 1.6); // 70,0.5,0,0
 	talon->ConfigSoftPositionLimits(2750, 0); // former value does nothing
 	// Assuming that the arm is always down when starting
 	talon->SetPosition(0);

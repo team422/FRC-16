@@ -25,3 +25,4 @@
 # LabVIEW files
 *.aliases
 *.lvlps
+/Simulate/

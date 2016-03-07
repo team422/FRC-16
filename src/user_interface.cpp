@@ -10,7 +10,8 @@ Joystick *UI::Primary_Driver::left_stick = 0,
 
 Joystick *UI::Secondary_Driver::launchpad = 0;
 JoystickButton *UI::Secondary_Driver::intake_double = 0,
-			   *UI::Secondary_Driver::intake_zero_pid;
+			   *UI::Secondary_Driver::intake_zero_pid = 0,
+			   *UI::Secondary_Driver::pid_enabled = 0;
 
 Xbox_Controller *UI::Secondary_Driver::controller = 0;
 
@@ -25,9 +26,12 @@ void UI::initialize() {
 
 	Secondary_Driver::intake_double = new JoystickButton(Secondary_Driver::launchpad, 8);
 	Secondary_Driver::intake_zero_pid = new JoystickButton(Secondary_Driver::launchpad, 12);
+	Secondary_Driver::pid_enabled = new JoystickButton(Secondary_Driver::launchpad, 13);
 
 	Secondary_Driver::controller->B->WhileHeld( new Set_Intake_Speed(intake_speed) );
 	Secondary_Driver::controller->A->WhileHeld( new Set_Intake_Speed(-intake_speed) );
 	Secondary_Driver::controller->RIGHT_BUMPER->WhenPressed( new Fire() );
+#ifdef PID
 	Secondary_Driver::intake_zero_pid->WhenPressed( new Zero_Intake_PID() );
+#endif
 }

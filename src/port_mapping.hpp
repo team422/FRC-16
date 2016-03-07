@@ -2,8 +2,11 @@
 
 #include <WPILib.h>
 
-// Uncomment for Mark1, leave commented for Mark2
-//#define Mark1
+// Uncomment for the test bot, comment for competition
+#define Mark1
+
+// Uncomment to turn off PID
+#define PID
 
 namespace Ports {
 

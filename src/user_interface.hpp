@@ -13,7 +13,8 @@ namespace UI {
 		extern Joystick *launchpad;
 		extern Xbox_Controller *controller;
 		extern JoystickButton *intake_double,
-							  *intake_zero_pid;
+							  *intake_zero_pid,
+							  *pid_enabled;
 	}
 	void initialize();
 }
