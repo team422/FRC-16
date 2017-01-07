@@ -2,6 +2,7 @@
 #include "intake.hpp"
 #include "../port_mapping.hpp"
 #include <WPILib.h>
+#include <CANTalon.h>
 
 Intake::Intake() :
 Subsystem("Intake"),

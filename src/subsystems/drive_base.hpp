@@ -1,6 +1,7 @@
 #pragma once
 
 #include <WPILib.h>
+#include <CANTalon.h>
 
 class Drive_Base : public Subsystem {
 public:

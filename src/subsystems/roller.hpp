@@ -1,6 +1,7 @@
 #pragma once
 
 #include <WPILib.h>
+#include <CANTalon.h>
 
 class Roller : public Subsystem {
 public:
